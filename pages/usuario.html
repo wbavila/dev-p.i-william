@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayQuest: Perfil do Usuário</title>
+    <link href="../estilos/usuario.css" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="../img/controle.jpg">
+</head>
+<body>
+    <header>
+        <div class="menuesquerda">
+            <a href="../index.html">Início</a> |
+            <div class="menu-jogos">
+                <a href="../pages/jogos.html">Jogos de PS/XBOX</a>
+                <div class="menu-oculto">
+                    <a href="../pages/jogos.html">PlayStation 4</a>
+                    <a href="../pages/jogos.html">PlayStation 5</a>
+                    <a href="../pages/jogos.html">Xbox One Series S</a>
+                    <a href="../pages/jogos.html">Xbox One Series X</a>
+                    <a href="../pages/jogos.html">Cartão Presente PlayStation</a>
+                </div>
+            </div>
+        </div>
+        <h1 class="titulo">PlayQuest: Sua Jornada Começa Aqui</h1>
+        <div class="menu-direita">
+            <div class="barra-pesquisa">
+                <input type="text" id="pesquisa" placeholder="Pesquisar...">
+                <button id="btn-pesquisar">🔍</button>
+            </div>
+            <a href="../pages/login.html" class="entrar">Entrar</a> |
+            <a href="../pages/cadastro.html" class="cadastro">Cadastrar</a> |
+            <a href="../pages/usuario.html" class="usuario">Perfil</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h3>Perfil do Usuário</h3>
+            <div class="dados">
+                <img src="../img/debugmaster.png" alt="Joãozinho Debug Master da Silva"
+                height="120px" width="120px">
+                <p>Nome Completo: Joãozinho "Debug Master" da Silva</p>
+                <p>CPF: 123.456.789-00</p>
+                <p>E-mail: tenteasorte@nãorespondonunca.com</p>
+                <p>Telefone: (11) 98765-4321</p>
+                <p>Endereço: Estrada Pueblo, Casa nº 4, Aldeia dos Ganados, Região Rural da Espanha</p>
+                <p>Status da Conta: 🟢 Ativo | 🔴 Infectado | ☠️ Morto-vivo</p>
+                <p>Último acesso: ❌ Ninguém sabe</p>
+            </div>
+            <div class="button-container">
+                <button class="btn-voltar" onclick="window.history.back()">Voltar</button>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="sobre">
+            <p><strong><u>SOBRE</strong></p></u>
+            <p>Quem somos</p>
+            <p>Termos de uso</p>
+            <p>Política de reembolso</p>
+        </div>
+        <div>
+            <p><strong><u>FORMAS DE PAGAMENTO</strong></p></u>
+            <p>Débito/Crédito</p>
+            <p>Transferência via Pix</p>
+            <p>Boleto</p>
+        </div>
+        <div class="contato">
+            <p><strong><u>CONTATO</strong></p></u>
+            <p>playquest@contato.com.br</p>
+            <p>Rua dos Alfeneiros, nº 4</p>
+            <p>(51) 995130469</p>
+        </div>
+    </footer>
+    
+    <script src="/scripts/barraPesquisa.js"></script>
+</body>
+</html>

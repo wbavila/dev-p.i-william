@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayQuest: Jogos</title>
+    <link href="../estilos/jogos.css" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="../img/controle.jpg">
+</head>
+<body>
+    <header>
+        <div class="menuesquerda">
+            <a href="../index.html">Início</a> |
+            <div class="menu-jogos">
+                <a href="../pages/jogos.html">Jogos de PS/XBOX</a>
+                <div class="menu-oculto">
+                    <a href="../pages/jogos.html">PlayStation 4</a>
+                    <a href="../pages/jogos.html">PlayStation 5</a>
+                    <a href="../pages/jogos.html">Xbox One Series S</a>
+                    <a href="../pages/jogos.html">Xbox One Series X</a>
+                    <a href="../pages/jogos.html">Cartão Presente PlayStation</a>
+                </div>
+            </div>
+        </div>
+        <h1 class="titulo">PlayQuest: Sua Jornada Começa Aqui</h1>
+        <div class="menu-direita">
+            <div class="barra-pesquisa">
+                <input type="text" id="pesquisa" placeholder="Pesquisar...">
+                <button id="btn-pesquisar">🔍</button>
+            </div>
+
+            <a href="../pages/login.html" class="entrar">Entrar</a> |
+            <a href="../pages/cadastro.html" class="cadastro">Cadastrar</a> |
+            <a href="../pages/usuario.html" class="usuario">Perfil</a>
+        </div>
+    </header>
+    <main>
+        <div class="produto">
+                <img src="../img/gowragnarok.png" alt="God of War Ragnarok">
+                <h2>God of War Ragnarok</h2>
+                <p>PlayStation 5</p>
+                <p>R$ 249,99</p>
+                </br>
+                <button onclick="adicionarAoCarrinho('God of War Ragnarok', 249.99)">Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="produto">
+                <img src="../img/tloupt1.webp" alt="The Last of Us Part I" height="142px">
+                <h2>The Last of Us Part I</h2>
+                <p>PlayStation 5</p>
+                <p>R$ 249,99</p>
+                </br>
+                <button onclick="adicionarAoCarrinho('The Last of Us Part 1', 249.99)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+                <img src="../img/gta5.jpg" alt="Grand Theft Auto V" height="142px">
+                <h2>Grand Theft Auto V</h2>
+                <p>PlayStation 5</p>
+                <p>R$ 199,99</p>
+                </br>
+                <button onclick="adicionarAoCarrinho('Grand Theft Auto V', 199.99)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+                <img src="../img/horizonfw.webp" alt="Horizon Forbidden West" height="142px">
+                <h2>Horizon Forbidden West</h2>
+                <p>PlayStation 5</p>
+                <p>R$ 199,00</p>
+                </br>
+                <button onclick="adicionarAoCarrinho('Horizon Forbidden West', 199.00)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+                <img src="../img/spider.webp" alt="Marvel's Spider-Man Remastered">
+                <h2>Marvel's Spider-Man Remastered</h2>
+                <p>PlayStation 4</p>
+                <p>R$ 149,99</p>
+                </br>
+                <button onclick="adicionarAoCarrinho('Marvels Spider-Man Remastered', 149.99)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+                <img src="../img/ghostoftsushima.webp" alt="Ghost of Tsushima DIRECTOR'S CUT">
+                <h2>Ghost of Tsushima DIRECTOR'S CUT</h2>
+                <p>PlayStation 4</p>
+                <p>R$ 249,90</p>
+                </br>
+                <button onclick="adicionarAoCarrinho('Ghost of Tsushima DIRECTORS CUT', 249.90)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+                <img src="../img/codww2.jpg" alt="Call Of Duty WWII Gold Edition" height="157px">
+                <h2>Call Of Duty WWII Gold Edition</h2>
+                <p>PlayStation 4</p>
+                <p>R$ 199,99</p>
+                </br>
+                <button onclick="adicionarAoCarrinho('Call Of Duty WWII Gold Edition', 199.99)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+                <img src="../img/thewitcher3.jpeg" alt="The Witcher 3: Wild Hunt - Complete Edition" height="157px">
+                <h2>The Witcher 3: Wild Hunt - Complete Edition</h2>
+                <p>PlayStation 4</p>
+                <p>R$ 249,99</p>
+                </br>
+                <button onclick="adicionarAoCarrinho('The Witcher 3: Wild Hunt - Complete Edition', 249.99)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+                <img src="../img/fh5.jpg" alt="Forza Horizon 5" height="142px">
+                <h2>Forza Horizon 5</h2>
+                <p>Xbox Series S/X</p>
+                <p>R$ 199,99</p>
+                </br>
+                <button onclick="adicionarAoCarrinho('Forza Horizon 5', 199.99)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+                <img src="../img/gears5.jpg" alt="Gears 5" height="142px">
+                <h2>Gears 5</h2>
+                <p>Xbox Series S/X</p>
+                <p>R$ 149,99</p>
+                </br>
+                <button onclick="adicionarAoCarrinho('Gears 5', 149.99)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+                <img src="../img/fc6gold.jpg" alt="Far Cry 6: Gold Edition">
+                <h2>Far Cry 6: Gold Edition</h2>
+                <p>Xbox Series S/X</p>
+                <p>R$ 548,38</p>
+                </br>
+                <button onclick="adicionarAoCarrinho('Far Cry 6: Gold Edition', 548.38)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+                <img src="../img/acvalhalla.jpg" alt="Assassin's Creed Valhalla">
+                <h2>Assassin's Creed Valhalla</h2>
+                <p>Xbox Series S/X</p>
+                <p>R$ 189,99</p>
+                </br>
+                <button onclick="adicionarAoCarrinho('Assassins Creed Valhalla', 189.99)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+                <img src="../img/giftcard35.png" alt="Cartão Presente R$ 35,00 PlayStation">
+                <h2>Cartão Presente PlayStation</h2>
+                <p>PlayStation 4/5</p>
+                <p>R$ 35,00</p>
+                </br>
+                <button onclick="adicionarAoCarrinho('Cartão Presente PlayStation', 35.00)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+                <img src="../img/giftcard100.png" alt="Cartão Presente R$ 100,00 PlayStation">
+                <h2>Cartão Presente PlayStation</h2>
+                <p>PlayStation 4/5</p>
+                <p>R$ 100,00</p>
+                </br>
+                <button onclick="adicionarAoCarrinho('Cartão Presente PlayStation', 100.00)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+                <img src="../img/giftcard250.webp" alt="Cartão Presente R$ 250,00 PlayStation">
+                <h2>Cartão Presente PlayStation</h2>
+                <p>PlayStation 4/5</p>
+                <p>R$ 250,00</p>
+                </br>
+                <button onclick="adicionarAoCarrinho('Cartão Presente PlayStation', 250.00)">Adicionar ao Carrinho</button>
+        </div>
+            <div class="produto">
+                <img src="../img/giftcard360.png" alt="Cartão Presente R$ 360,00 PlayStation">
+                <h2>Cartão Presente PlayStation</h2>
+                <p>PlayStation 4/5</p>
+                <p>R$ 360,00</p>
+                </br>
+                <button onclick="adicionarAoCarrinho('Cartão Presente PlayStation', 360.00)">Adicionar ao Carrinho</button>
+            </div>
+        </main>
+          <!-- carrinho -->
+          <div id="dropdown-carrinho" class="dropdown">
+            <a href="../pages/finalizarcompra.html">
+            <button id="icone-carrinho" onclick="toggleCarrinho()">Carrinho 🛒 <span id="contador-carrinho">0</span></button>
+            </a>
+            <div id="carrinho" class="carrinho-oculto">
+                <p id="lista-carrinho"></p>
+                <p>Total: R$ <span id="total-carrinho">0.00</span></p>
+                </br>
+                <button class="btn-compra" onclick="finalizarCompra()">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+
+    <footer>
+        <div class="sobre">
+            <p><strong><u>SOBRE</u></strong></p>
+            <p>Quem somos</p>
+            <p>Termos de uso</p>
+            <p>Política de reembolso</p>
+        </div>
+        <div>
+            <p><strong><u>FORMAS DE PAGAMENTO</u></strong></p>
+            <p>Débito/Crédito</p>
+            <p>Transferência via Pix</p>
+            <p>Boleto</p>
+        </div>
+        <div class="contato">
+            <p><strong><u>CONTATO</u></strong></p>
+            <p>playquest@contato.com.br</p>
+            <p>Rua dos Alfeneiros, nº 4</p>
+            <p>(51) 995130469</p>
+        </div>
+    </footer>
+
+    <script src="/scripts/barraPesquisa.js"></script>
+    <script src="/scripts/carrinho.js"></script>
+    <script>
+        let carrinho = [];
+        let total = 0;
+
+        function adicionarAoCarrinho(nome, preco) {
+            carrinho.push({ nome, preco });
+            total += preco;
+            atualizarCarrinho();
+            alert(`${nome} adicionado ao carrinho por R$ ${preco.toFixed(2)}!`);
+        }
+
+        function atualizarCarrinho() {
+            const listaCarrinho = document.getElementById("lista-carrinho");
+            const totalCarrinho = document.getElementById("total-carrinho");
+            const contadorCarrinho = document.getElementById("contador-carrinho");
+
+            listaCarrinho.innerHTML = "";
+            carrinho.forEach(item => {
+                const li = document.createElement("li");
+                li.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)}`;
+                listaCarrinho.appendChild(li);
+            });
+
+            totalCarrinho.textContent = total.toFixed(2);
+            contadorCarrinho.textContent = carrinho.length;
+        }
+
+        function toggleCarrinho() {
+            document.getElementById("carrinho").classList.toggle("carrinho-oculto");
+        }
+
+        function finalizarCompra() {
+            if (carrinho.length === 0) {
+                alert("Seu carrinho está vazio!");
+                return;
+            }
+            alert("Compra finalizada!");
+            carrinho = [];
+            total = 0;
+            atualizarCarrinho();
+        }
+    </script>
+</body>
+</html>

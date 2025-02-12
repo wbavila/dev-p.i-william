@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayQuest: Finalizar Compra</title>
+    <link href="../estilos/finalizarcompra.css" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="../img/controle.jpg">
+</head>
+<body>
+    <header>
+        <div class="menuesquerda">
+            <a href="../index.html">Início</a> |
+            <div class="menu-jogos">
+                <a href="../pages/jogos.html">Jogos de PS/XBOX</a>
+                <div class="menu-oculto">
+                    <a href="../pages/jogos.html">PlayStation 4</a>
+                    <a href="../pages/jogos.html">PlayStation 5</a>
+                    <a href="../pages/jogos.html">Xbox One Series S</a>
+                    <a href="../pages/jogos.html">Xbox One Series X</a>
+                    <a href="../pages/jogos.html">Cartão Presente PlayStation</a>
+                </div>
+            </div>
+        </div>
+        <h1 class="titulo">PlayQuest: Sua Jornada Começa Aqui</h1>
+        <div class="menu-direita">
+            <!-- Ícone do Carrinho de Compras -->
+            <div id="dropdown-carrinho" class="dropdown">
+                <button id="icone-carrinho" onclick="toggleCarrinho()">🛒 <span id="contador-carrinho">0</span></button>
+                <div id="carrinho" class="carrinho-oculto">
+                    <ul id="lista-carrinho"></ul>
+                    <p>Total: R$ <span id="total-carrinho">0.00</span></p>
+                    <button onclick="finalizarCompra()">Finalizar Compra</button>
+                </div>
+            </div>
+            
+            <div class="barra-pesquisa">
+                <input type="text" id="pesquisa" placeholder="Pesquisar...">
+                <button id="btn-pesquisar">🔍</button>
+            </div>
+
+            <a href="../pages/login.html" class="entrar">Entrar</a> |
+            <a href="../pages/cadastro.html" class="cadastro">Cadastrar</a> |
+            <a href="../pages/usuario.html" class="usuario">Perfil</a>
+        </div>
+    </header>
+
+    <main>
+        <main>
+            <h2>Finalizar Compra</h2>
+        
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Valor Unitário</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-carrinho">
+                    <!-- Os itens do carrinho serão inseridos aqui via JavaScript -->
+                </tbody>
+            </table>
+        
+            <p><strong>Total da Compra: R$ <span id="total-compra">0.00</span></strong></p>
+        
+            <button onclick="concluirCompra()">Finalizar Compra</button>
+        </main>
+        
+    </main>
+
+    <footer>
+        <div class="sobre">
+            <p><strong><u>SOBRE</u></strong></p>
+            <p>Quem somos</p>
+            <p>Termos de uso</p>
+            <p>Política de reembolso</p>
+        </div>
+        <div>
+            <p><strong><u>FORMAS DE PAGAMENTO</u></strong></p>
+            <p>Débito/Crédito</p>
+            <p>Transferência via Pix</p>
+            <p>Boleto</p>
+        </div>
+        <div class="contato">
+            <p><strong><u>CONTATO</u></strong></p>
+            <p>playquest@contato.com.br</p>
+            <p>Rua dos Alfeneiros, nº 4</p>
+            <p>(51) 995130469</p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
